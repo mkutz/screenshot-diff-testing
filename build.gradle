@@ -1,0 +1,13 @@
+// Apply the groovy plugin to add support for Groovy
+apply plugin: 'groovy'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.13'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
